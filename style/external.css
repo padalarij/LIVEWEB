@@ -62,7 +62,7 @@ header {
 	grid-area: line;
 	position: relative;
 	top: -12%;
-	left: 80%;
+	left: 55%;
 }
 .in_header_down .text{
 	grid-area: text;
@@ -191,7 +191,7 @@ footer {
 	grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	justify-items: center;
 	align-items: center;
-	height: 70px;
+	height: 200px;
 }
 .in_footer_up p *{
 	text-decoration: none;
@@ -223,6 +223,11 @@ footer {
 	grid-template-columns: 10fr 1fr 1fr 1fr 1fr 1fr 10fr;
 	justify-items: center;
 }
+@media screen and (max-width:1680px){
+	.in_header_down .line{
+		left: 0%;
+	}
+}
 @media screen and (max-width:1330px){
 	.content_list{
 		grid-template-columns: repeat(2,1fr);
@@ -239,7 +244,7 @@ footer {
 	}
 	.in_header_down .line{
 		top: -12%;
-		left: 11%;
+		left: 4%;
 	}
 
 }
@@ -255,7 +260,6 @@ footer {
 	}
 	.in_header_down .line{
 		top: -28%;
-		left: 50%;
 	}
 }
 @font-face {
